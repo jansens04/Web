@@ -1,0 +1,16 @@
+/*? global clearing */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.img-testi {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
