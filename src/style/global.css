@@ -14,3 +14,13 @@ html {
   border-radius: 50%;
   object-fit: cover;
 }
+
+@media (max-width: 760px) {
+  .navMenu {
+    transform: translateY(-450px);
+  }
+}
+
+.navMenu.active {
+  transform: translateY(0px);
+}
