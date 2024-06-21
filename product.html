@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Product</title>
+    <!-- cdn to style -->
+    <link rel="stylesheet" href="./src/style/global.css">
+
     <!-- cdn to tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- cdn to boxicons -->
@@ -12,48 +15,78 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!-- or -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
 </head>
 
 <body>
     <!-- Header  Start-->
-    <header class="fixed top-0 w-full z-10">
-        <div class="mx-auto max-w-screen-xl px-4 backdrop-blur-md sm:px-6 sm:py-6 lg:px-8 bg-white py-5">
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <div class="text-center sm:text-left">
-                    <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
-                        <a href="./index.html">WayStore</a>
-                    </h1>
-                </div>
-
-                <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-                    <a href="" class="underline underline-offset-2 duration-300 hover:text-indigo-500 mx-auto">Sign
-                        In</a>
-                    <div class="relative cursor-pointer">
-                        <span
-                            class="inline-block w-[15px] h-[19px] text-center bg-red-500 rounded-full text-white text-sm absolute -top-2 -right-1 z-10">0</span>
-                        <i
-                            class='bx bx-cart-add text-2xl bg-indigo-500 inline-block rounded-md px-3 py-1 text-white duration-500 hover:bg-indigo-900 active:scale-90'></i>
-                    </div>
-
+    <header class="fixed top-0 w-full z-50 shadow">
+        <nav class="flex justify-between items-center py-5 px-16 bg-white">
+            <a href="" class="font-medium text-2xl">Wwaystore</a>
+            <div class="flex items-center gap-5">
+                <a href="" class="text-indigo-500 underline">Sign in</a>
+                <div class="relative">
+                    <i class='bx bx-cart-add text-2xl duration-300 cursor-pointer hover:text-indigo-500 '></i>
+                    <span
+                        class="absolute -right-2 -top-2 bg-red-500 text-white rounded-full px-[3px] py-[1px] text-sm">0</span>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
     <!-- Header  End-->
 
-    <!-- Product Start -->
-    <section class=" md:mt-[5rem]">
-        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-            <header>
+    <!-- Show Product Content -->
+    <section class=" md:mt-[4rem] ">
+        <div class="  mx-auto max-w-screen-xl  px-4 py-8 sm:px-6 sm:py-12 lg:px-8 ">
+            <header class="text-center">
                 <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Product Collection</h2>
 
-                <p class="mt-4 max-w-md text-gray-500">
+                <p class="mt-4 mx-auto max-w-md text-gray-500">
                     Temukan produk berkualitas tinggi dan penawaran menarik di website kami. Nikmati kemudahan
                     berbelanja online dengan pengiriman cepat dan layanan yang aman. Kunjungi sekarang untuk pengalaman
                     belanja yang praktis dari kenyamanan rumah Anda.
                 </p>
+
+
             </header>
 
+            <div class="content-wrap">
+                <img src="./src/assets/img/Show Product/1.jpg" alt="">
+                <img src="./src/assets/img/Show Product/2.jpg" alt="">
+                <img src="./src/assets/img/Show Product/3.jpg" alt="">
+                <img src="./src/assets/img/Show Product/4.jpg" alt="">
+                <img src="./src/assets/img/Show Product/5.jpg" alt="">
+                <img src="./src/assets/img/Show Product/6.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- Show Product End -->
+
+
+    <!-- Show Product Start -->
+    <section>
+        <!-- Populer Product Start -->
+        <div class="bg-[#ececec]  rounded-xl">
+            <div class="max-w-screen-lg w-full mx-auto py-6">
+                <h1 class="font-medium text-2xl text-gray-800 ps-4 md:ps-0">Populer</h1>
+
+                <div class="testing ">
+                    <img src="./src/assets/img/Favorit Product/f1.jpg" alt="">
+                    <img src="./src/assets/img/Favorit Product/f2.jpg" alt="">
+                    <img src="./src/assets/img/Favorit Product/f3.jpg" alt="">
+                    <img src="./src/assets/img/Favorit Product/f4.jpg" alt="">
+                    <img src="./src/assets/img/Favorit Product/f5.jpg" alt="">
+                    <img src="./src/assets/img/Favorit Product/f6.jpg" alt="">
+                    <img src="./src/assets/img/Favorit Product/f7.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- Populer Product End -->
+    </section>
+    <!-- Show Product End-->
+    <!-- 
             <div class="mt-8 flex items-center justify-between">
                 <div class="w-full flex justify-end">
                     <div class="w-[250px]">
@@ -69,16 +102,11 @@
                             <option value="BG">Perlengkapan Sekolah</option>
                         </select>
                     </div>
-
                 </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- Product Start -->
+            </div> -->
 
     <!-- Footer Start -->
-    <footer class="bg-white pt-16">
+    <!-- <footer class="bg-white pt-16">
         <div class="mx-auto max-w-screen-xl space-y-8 px-4 pt-16 pb-6 sm:px-6 lg:space-y-16 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
@@ -204,7 +232,7 @@
 
             <p class="text-xs text-gray-500">&copy; 2022. WayStore. All rights reserved.</p>
         </div>
-    </footer>
+    </footer> -->
     <!-- Footer End -->
 </body>
 

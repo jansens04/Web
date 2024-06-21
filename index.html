@@ -19,7 +19,7 @@
 <body>
   <div class="overflow-hidden">
     <!-- Header  Start-->
-    <header class="fixed top-0 w-full z-10">
+    <header class="fixed top-0 w-full z-10 shadow">
       <!-- Announcment Start -->
       <div class="bg-indigo-600 px-4 py-3 text-white">
         <p class="text-center text-sm font-medium">
@@ -30,14 +30,14 @@
       <!-- Announcment End -->
 
       <!-- Navbar Start -->
-      <nav class="fixed w-full py-5 px-5 bg-white flex items-center justify-between">
+      <nav class="relative w-full py-5 px-5 bg-white flex items-center justify-between">
         <a href="" class="font-medium text-2xl ">WwayStore</a>
         <div class="flex items-center">
           <ul
             class="navMenu bg-white  absolute duration-300 left-0 top-[65px] md:left-10  w-full text-center px-5 *:py-2 pt-8 pb-4 md:relative md:top-0 md:flex md:items-center md:gap-6  md:py-0  md:*:ps-2">
-            <li><a href="" class="duration-300 hover:text-gray-600">Services</a></li>
-            <li><a href="" class="duration-300 hover:text-gray-600">Testimonial</a></li>
-            <li><a href="" class="duration-300 hover:text-gray-600">Product</a></li>
+            <li><a href="#services" class="duration-300 hover:text-gray-600">Services</a></li>
+            <li><a href="#testimonial" class="duration-300 hover:text-gray-600">Testimonial</a></li>
+            <li><a href="#product" class="duration-300 hover:text-gray-600">Product</a></li>
 
             <a href="#"
               class="inline-block bg-indigo-500  text-white w-full rounded-[4px] duration-300 hover:bg-indigo-800 md:bg-transparent md:text-gray-900 md:text-indigo-500 md:hover:underline md:hover:bg-transparent md:text-nowrap">
@@ -52,6 +52,8 @@
               Admin</a>
             <i
               class='bx bx-menu text-3xl menuHamburger border-2 border-indigo-500 px-2 rounded-[4px] text-gray-700 cursor-pointer duration-300 active:scale-90 ms-2 md:hidden'></i>
+            <i
+              class='bx bx-x text-3xl menuCloseHamburger border-2 border-indigo-500 px-2 rounded-[4px] text-gray-700 cursor-pointer duration-300 active:scale-90 ms-2 hidden md:hidden'></i>
           </div>
 
         </div>
