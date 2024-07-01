@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!-- or -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <!-- link to flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
 
 </head>
 
@@ -48,7 +50,7 @@
                 </p>
             </header>
 
-            <div class="content-wrap">
+            <div class="content-wrap animate-pulse">
                 <img src="./src/assets/img/Show Product/1.jpg" alt="">
                 <img src="./src/assets/img/Show Product/2.jpg" alt="">
                 <img src="./src/assets/img/Show Product/3.jpg" alt="">
@@ -90,27 +92,32 @@
         <div class="mt-8 flex items-center justify-between">
             <div class="w-full flex justify-end">
                 <div class="w-[250px]">
-                    <label for="HeadlineAct" class="block text-sm font-medium text-gray-900"> Kategori </label>
+                    <label for="HeadlineAct" class="block text-sm font-medium text-gray-900"> Kategori
+                    </label>
                     <select name="HeadlineAct" id="HeadlineAct"
                         class="mt-1.5 w-full rounded-md py-2 px-2 border border-gray-300 text-gray-700 sm:text-sm focus:outline-none">
-                        <option value="">Please select</option>
-                        <option value="JM">Makanan dan Minuman</option>
-                        <option value="SRV">Pakaian </option>
-                        <option value="JH">Teknologi</option>
-                        <option value="BBK">Barang Antik</option>
-                        <option value="AK">Perhiasan</option>
-                        <option value="BG">Perlengkapan Sekolah</option>
+                        <option selected disabled>Please Select</option>
+                        <option value="ALL">All Product </option>
+                        <option value="PKN">Pakaian </option>
+                        <option value="TNLG">Teknologi</option>
+                        <option value="BA">Barang Antik</option>
+                        <option value="PHN">Perhiasan</option>
+                        <option value="PS">Perlengkapan Sekolah</option>
                     </select>
                 </div>
             </div>
         </div>
+        <div class="allProduct flex flex-wrap justify-center gap-6 mt-16">
+        </div>
 
-        <div class="allProduct grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
+        <div
+            class="flex justify-center text-sm items-center px-2 py-2 bg-indigo-500 w-[130px] text-gray-200 rounded-md  gap-1 mx-auto mt-8 duration-300 hover:bg-indigo-800 cursor-pointer btnLoadMore">
+            <span class="txtPagnation">Load More
+            </span>
+            <i class='bx bx-chevron-up animate'></i>
         </div>
     </section>
 
-    <!-- Section Product End-->
     <!-- Footer Start -->
     <footer class="bg-white pt-16">
         <div class="mx-auto max-w-screen-xl space-y-8 px-4 pt-16 pb-6 sm:px-6 lg:space-y-16 lg:px-8">
@@ -137,7 +144,6 @@
                     <div>
                         <p class="font-medium text-gray-900">Services</p>
                         <ul class="mt-6 space-y-4 text-sm">
-                            <li><a href="#" class="text-gray-700 hover:opacity-75">Makanan dan Minuman</a></li>
                             <li><a href="#" class="text-gray-700 hover:opacity-75">Pakaian</a></li>
                             <li><a href="#" class="text-gray-700 hover:opacity-75">Teknologi</a></li>
                             <li><a href="#" class="text-gray-700 hover:opacity-75">Barang Antik</a></li>
@@ -168,6 +174,9 @@
     <!-- Footer End -->
 
     <script src="./src/js/product.js"></script>
+
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 
 </body>
 
