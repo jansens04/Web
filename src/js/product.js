@@ -342,7 +342,7 @@ const setUiProduct = () => {
              <a href="#" class="text-gray-900 group-hover:underline group-hover:underline-offset-4">
                ${product.title_product}
              </a>
-             <p class="text-fuchsia-700 font-medium ">${product.price}K</p>
+             <p class="text-indigo-400 font-medium ">${product.price}K</p>
            </div>
 
            <p class="mt-1.5 text-pretty text-xs text-gray-500 w-full">${product.desc_product}</p>

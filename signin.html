@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- cdn tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- script boxicons -->
+    <!-- cdn to box-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<style>
+    .orLoginWith {
+        position: relative;
+    }
+
+    .orLoginWith::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 30%;
+        border: 1px solid #a1a0a0;
+    }
+
+    .orLoginWith::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 30%;
+        border: 1px solid #a1a0a0;
+    }
+</style>
+
+<body class="bg-[#fff]">
+    <div class="mx-auto  sm:flex sm:items-center sm:max-w-4xl ">
+        <div class="hidden sm:flex sm:items-center sm:justify-center  h-screen  bg-indigo-100 grow">
+            <img src="./src/assets/img/login.svg" alt="" class="sm:h-[250px] sm:w-[250px] lg:h-[350px] lg:w-[300px]">
+        </div>
+        <div class="mx-12 sm:me-2 md:me-0 my-4 sm:mx-0 border sm:grow bg-white rounded-lg">
+            <div class=" shadow-md  sm:border py-6  rounded-lg">
+                <h1 class="text-3xl font-semibold text-center text-[#515172]">Welcome Back,</h1>
+                <p class="text-center text-md text-[#515172] ">Sign in to your account</p>
+
+                <div class="my-8 mx-6">
+                    <!-- Input Username Start -->
+                    <div class="border w-full relative h-10 flex items-center border border-indigo-400">
+                        <label for="username" class="absolute">
+                            <i class='bx bx-user text-xl text-[#6063EB] px-2 border-r-2 border-r-indigo-400'></i>
+                        </label>
+                        <input type="text" id="username" placeholder="Username"
+                            class=" ms-10 ps-4 w-full outline-none text-[#424242]   ">
+                    </div>
+                    <!-- Input Username End -->
+
+                    <!-- Input Password Start -->
+                    <div class="border w-full relative h-10 flex items-center border border-indigo-400 my-4">
+                        <label for="password" class="absolute">
+                            <i
+                                class='bx bx-lock-open-alt text-xl text-[#6063EB] px-2 border-r-2 border-r-indigo-400'></i>
+                        </label>
+                        <input type="password" id="password" placeholder="Password"
+                            class=" ms-10 ps-4 w-full outline-none text-[#424242]   ">
+                    </div>
+                    <!-- Input Password End-->
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" id="remember">
+                            <label for="remember" class="text-[#424242]">Remember Me</label>
+                        </div>
+                        <a href="" class="text-indigo-500 underline">Forget Password</a>
+                    </div>
+
+                    <button
+                        class="flex w-36 py-1  border  bg-indigo-500 text-gray-200 justify-center mx-auto my-6 rounded-md duration-300 hover:bg-indigo-800 active:scale-105 "
+                        onclick="login()">Login</button>
+
+                    <p class="text-center text-md orLoginWith">or login with</p>
+
+                    <ul class="*:text-2xl flex justify-center my-10 gap-12 *:text-[#424242] *:duration-300 ">
+                        <li class="hover:text-red-800"><a href="">
+                                <i class='bx bxl-google '></i>
+                            </a></li>
+                        <li class="hover:text-blue-500"><a href="">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a></li>
+                        <li class="hover:text-blue-500"><a href="">
+                                <i class='bx bxl-paypal'></i>
+                            </a></li>
+                    </ul>
+
+                    <button
+                        class="border-2 border-indigo-500 bg-indigo-50 py-1.5 px-10 mx-auto flex rounded-md duration-300 hover:text-gray-200 hover:bg-indigo-500 active:scale-105">Create
+                        New
+                        Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/signin.js"></script>
+</body>
+
+</html>
